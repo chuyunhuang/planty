@@ -1,0 +1,26 @@
+:root{
+  --mainGreen: #2C514C;
+  --lightGreen: #EDEEC0;
+  --mainWhite: #F9F5F2;
+  --mainDark:#191919;
+  --mainYellow: #DCF763;
+}
+
+body{
+  font-family: 'Nunito', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+}
+
+.text-mainGreen{
+  color: var(--mainGreen);
+}
+
+.text-lightGreen{
+  color: var(--lightGreen);
+}
