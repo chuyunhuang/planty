@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../Images/logo.png'
 import './NavBar.css';
+import styled from 'styled-components';
 
 export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark px-sm-5" style={{ backgroundColor: "#DCF763" }}>
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
           <img src={logo} style={{ width: "80px", backgroundColor: "#191919", borderRadius: "50%" }} />
         </Link>
@@ -19,12 +20,26 @@ export default class Navbar extends Component {
           </li>
         </ul>
         <Link to="/cart" className="ml-auto">
-          <button>
+          <ButtonContainer>
             Shopping Cart
-          </button>
+          </ButtonContainer>
         </Link>
-      </nav>
+      </NavWrapper>
     )
   }
 
 }
+
+const ButtonContainer = styled.button`
+  background: transparent;
+  border: 1px solid var(--mainDark);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  &:hover{
+    background: var(--mainDark);
+    color: var(--mainWhite);
+  }
+`
+const NavWrapper = styled.nav`
+background: var(--mainYellow) `
