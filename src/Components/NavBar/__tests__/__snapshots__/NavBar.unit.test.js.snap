@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render navbar 1`] = `
+<nav
+  className="navbar navbar-expand-sm navbar-dark px-sm-5"
+  style={
+    Object {
+      "backgroundColor": "#DCF763",
+    }
+  }
+>
+  <Link
+    to="/"
+  >
+    <img
+      src="logo.png"
+      style={
+        Object {
+          "backgroundColor": "#191919",
+          "borderRadius": "50%",
+          "width": "80px",
+        }
+      }
+    />
+  </Link>
+  <ul
+    className="navbar-nav align-items-center"
+  >
+    <li
+      className="nav-item ml-5"
+    >
+      <Link
+        className="nav-link"
+        to="/"
+      >
+        Product
+      </Link>
+    </li>
+  </ul>
+  <Link
+    className="ml-auto"
+    to="/cart"
+  >
+    <button>
+      Shopping Cart
+    </button>
+  </Link>
+</nav>
+`;
