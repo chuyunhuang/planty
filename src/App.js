@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import NavBar from './Components/NavBar/NavBar';
 import ProductList from './Components/ProductList/ProductList';
-import Product from './Components/Product/Product';
 import ProductDetail from './Components/ProductDetail/ProductDetail';
 import ShoppingCart from './Components/ShoppingCart/ShoppingCart';
 import PageNotFound from './Components/PageNotFound/PageNotFound';

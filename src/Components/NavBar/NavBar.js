@@ -10,7 +10,7 @@ export default class Navbar extends Component {
     return (
       <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
-          <img src={logo} style={{ width: "80px", backgroundColor: "#191919", borderRadius: "50%" }} />
+          <img src={logo} alt="logo" style={{ width: "80px", backgroundColor: "#191919", borderRadius: "50%" }} />
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
