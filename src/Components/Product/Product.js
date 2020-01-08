@@ -18,6 +18,10 @@ export class Product extends Component {
               {inCart ? (<p className="text-capitalized mb-0" disabled>{" "}Added to Cart</p>) : (<img src={addToCartIcon} />)}
             </button>
           </div>
+          <div className="card-footer d-flex justify-content-between">
+            <p className="align-self-center mb-0">{title}</p>
+            <p class="mb-0">${price}</p>
+          </div>
         </div>
         <div>hello from product</div>
       </ProductWrapper>
@@ -27,4 +31,19 @@ export class Product extends Component {
 }
 
 const ProductWrapper = styled.div`
-`
+.card{
+  border-color:tranparent;
+  transition: all 1s linear;
+}
+.card-footer{
+  background: transparent;
+  border-color: transparent;
+  transition: all 1s linear;
+}
+&:hover{
+  .card{
+    border: 2rem solid red;
+    box-shadow: 2px 2px 5px 0px rgba(var(--lightGreen));
+  }
+}
+`;
