@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../../context';
 import { render } from 'enzyme';
 import addToCartIcon from '../../Images/addToCart.png';
+import PropTypes from 'prop-types';
+
 export class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product
@@ -28,6 +30,17 @@ export class Product extends Component {
 
     )
   }
+}
+
+Product.PropTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number,
+    img: PropTypes.string,
+    title: PropTypes.string,
+    price: PropTypes.number,
+    inCart: PropTypes.bool
+  }).isRequired
+
 }
 
 const ProductWrapper = styled.div`
