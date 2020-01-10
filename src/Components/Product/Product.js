@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../../context';
 import { render } from 'enzyme';
 import addToCartIcon from '../../Images/addToCart.png';
+import '../../App.css';
 import PropTypes from 'prop-types';
 
 export class Product extends Component {
@@ -25,14 +26,13 @@ export class Product extends Component {
             <p class="mb-0">${price}</p>
           </div>
         </div>
-        <div>hello from product</div>
       </ProductWrapper>
 
     )
   }
 }
 
-Product.PropTypes = {
+Product.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
     img: PropTypes.string,
@@ -55,8 +55,40 @@ const ProductWrapper = styled.div`
 }
 &:hover{
   .card{
-    border: 2rem solid red;
-    box-shadow: 2px 2px 5px 0px rgba(var(--lightGreen));
+    border: 1rem solid var(--lightGreen);
+    box-shadow: 2px 2px 5px 0px var(--lightGreen);
+  }
+  .card-footer{
+    background: rgba(247, 247, 247);
   }
 }
+.image-container{
+  position: relative;
+  overflow: hidden;
+}
+.card-img-top{
+  transition: all 1s linear;
+}
+.image-container:hover .card-img-top{
+  transform: scale(1.2);
+}
+.cart-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--lightGreen);
+  border: none;
+  border-radius: 0.5rem 0 0 0;
+  transform: translate (100%,100%);
+  transition: all 1s linear;
+}
+image-container:hover .cart-btn{
+  transform: translate(0,0);
+}
+.cart-btn:hover{
+  background: var(--mainWhite);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 `;
