@@ -95,4 +95,17 @@ export const storeProducts = [
     count: 0,
     total: 0
   },
-]
+];
+
+export const detailProduct = {
+  id: 1,
+  title: "Jade Plant",
+  img: "https://firebasestorage.googleapis.com/v0/b/cactus-338da.appspot.com/o/plant1.jpg?alt=media&token=aecefd30-3bc9-4684-999d-c49c3764111a",
+  price: 20,
+  company: "Planty",
+  info:
+    "The Jade Plant is known for its upright, treelike appearance and glossy green, spoon-shaped leaves. In bright light, the leaves can develop a red hue around their edges.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mi purus, cursus vitae molestie quis, placerat sed magna. Aliquam et iaculis odio. Nulla mollis, lacus at placerat ullamcorper, libero est bibendum nisl, in facilisis urna ante vel dolor. Morbi dignissim, elit et malesuada feugiat, quam orci tempor arcu, vel aliquet purus felis a justo. Aenean blandit, lacus in scelerisque porta, elit velit volutpat purus, eget egestas enim dui eget enim. Nulla sit amet ligula nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus posuere lorem non faucibus gravida. Nam iaculis, nulla at lobortis auctor, ligula felis dignissim lectus, eu dictum libero neque sit amet dui. Quisque vehicula hendrerit nulla a hendrerit. Fusce semper ornare nunc, ut aliquet lorem luctus ac. In hendrerit ultricies nisi et sagittis. Aliquam suscipit ligula augue, at rhoncus dui pharetra eu.",
+  inCart: false,
+  count: 0,
+  total: 0
+};
