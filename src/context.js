@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import { storeProducts } from './data';
+import { storeProducts, detailProduct } from './data';
 
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
   state = {
-    products: []
+    products: [],
+    detailProduct: detailProduct
   }
 
   componentDidMount() {
     this.setProduct()
   }
-
+  //so we don't use reference, but create a new copy of data
   setProduct = () => {
     let tempProducts = []
     storeProducts.forEach(item => {
