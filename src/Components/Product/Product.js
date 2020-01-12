@@ -27,7 +27,7 @@ export class Product extends Component {
           </ProductConsumer>
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
-            <p class="mb-0">${price}</p>
+            <p className="mb-0">${price}</p>
           </div>
         </div>
       </ProductWrapper>
