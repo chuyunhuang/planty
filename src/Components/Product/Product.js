@@ -19,7 +19,8 @@ export class Product extends Component {
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
-                <button className="cart-btn" disabled={inCart ? true : false} onClick={() => value.addToCart(id)}>
+                <button className="cart-btn" disabled={inCart ? true : false}
+                  onClick={() => { value.addToCart(id); value.openModal(id) }}>
                   {inCart ? (<p className="text-capitalized mb-0" disabled>{" "}Added to Cart</p>) : (<img src={addToCartIcon} />)}
                 </button>
               </div>

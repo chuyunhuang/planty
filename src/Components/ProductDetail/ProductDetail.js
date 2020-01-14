@@ -34,7 +34,7 @@ export default function ProductDetail() {
                       Back to Product Page
                     </ButtonContainer>
                   </Link>
-                  <ButtonContainer cart disabled={inCart ? true : false} onClick={() => value.addToCart(id)}>
+                  <ButtonContainer cart disabled={inCart ? true : false} onClick={() => { value.addToCart(id); value.openModal(id) }}>
                     {inCart ? 'already in cart' : 'add to cart'}
                   </ButtonContainer>
                 </div>
