@@ -1,5 +1,4 @@
 import React from 'react';
-import { trashIcon } from '../../Images/trashIcon.png';
 
 export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
