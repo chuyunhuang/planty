@@ -1,12 +1,13 @@
-### Project Overview 
+# PLANTY - eCommerce Site for Plants 
 
-
+### Home Page
+ ![](plantyHomePage.png)
+ 
+### Modal View of Item Added to Cart 
+ ![](plantyModalView.png)
 
 ### Tech Stacks
+React, JavaScript, HTML, CSS(Bootstrap and Styled Components)
 
-### Deployment
-
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Deployment 
+[Link to Deployed Site](https://quirky-aryabhata-761e17.netlify.com/)
