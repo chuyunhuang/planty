@@ -24,3 +24,20 @@ body{
 .text-lightGreen{
   color: var(--lightGreen);
 }
+
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: black;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover{
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon{
+  cursor: pointer;
+}
