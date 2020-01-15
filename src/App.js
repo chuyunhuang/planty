@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/" component={ProductList} />
         <Route path="/details" component={ProductDetail} />
         <Route path="/cart" component={ShoppingCart} />
-        <Route path="/deafult" component={PageNotFound} />
+        <Route path="/" component={PageNotFound} />
       </Switch>
       <Modal />
     </Router>
