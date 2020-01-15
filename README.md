@@ -1,10 +1,17 @@
-# PLANTY - eCommerce Site for Plants 
+# PLANTY - eCommerce Site
 
 ### Home Page
  ![](plantyHomePage.png)
  
-### Modal View of Item Added to Cart 
- ![](plantyModalView.png)
+ 
+### Detailed Product Page
+![](plantydetailedProduct.png)
+
+### Modal View for Item Added to Cart 
+![](plantyModal.png)
+ 
+### View Shopping Cart
+ ![](plantyCartPage.png)
 
 ### Tech Stacks
 React, JavaScript, HTML, CSS(Bootstrap and Styled Components)
