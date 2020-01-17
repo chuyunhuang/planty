@@ -17,5 +17,4 @@ An e-Commerce site for my ideal plant shop!
 ### Tech Stacks
 React, JavaScript, HTML, CSS(Bootstrap and Styled Components)
 
-### Deployment 
-[Link to Deployed Site](https://quirky-aryabhata-761e17.netlify.com/)
+### [Link](https://quirky-aryabhata-761e17.netlify.com/)
